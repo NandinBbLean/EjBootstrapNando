@@ -1,2 +1,0 @@
-# EjBootstrapNando
-Ejercicio bootstrap
