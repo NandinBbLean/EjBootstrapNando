@@ -1,0 +1,74 @@
+:root {
+  --amarillo-fondo: rgb(255, 134, 14);
+  --naranja-principal: rgb(255, 174, 0);
+  --gris-claro: #e0e0e0;
+  --rojo-destacado: #b30000;
+  --blanco-amarillento: #fffbe6;
+}
+
+body {
+  background-color: var(--amarillo-fondo);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.principal {
+  background-color: var(--naranja-principal);
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.ej-columnas {
+  background-color: var(--gris-claro);
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.row {
+  padding: 20px 0;
+  margin: 10px 0;
+}
+
+.tarjetas-1 .card {
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.tortas-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tortas-column {
+  flex: 1 1 300px;
+  background-color: var(--blanco-amarillento);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--rojo-destacado);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.comic {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .tortas-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tortas-column {
+    width: 100%;
+  }
+}
